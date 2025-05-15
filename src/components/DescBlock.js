@@ -19,7 +19,7 @@ function DescBlock({ title, iconSrc, value, unit, wind_dir }) {
             <u className="desc-unit">{unit}</u>
           </p>
           <img
-            src="/icons/icon_arrow.png"
+            src="icons/icon_arrow.png"
             className="desc-wind-dir"
             alt="wind direction icon"
             style={{ transform: `rotate(${wind_dir}deg)` }}
