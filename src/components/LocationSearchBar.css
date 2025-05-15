@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Monograf Regular'; /* Name to use in CSS */
+    src: "/fonts/Monograf-Regular.ttf" format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.location-search-bar {
+    min-height: 36px;
+    
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    
+}
+#location-input{
+    border-style: none;
+    background-color: transparent;
+    padding: 0px 20px 0px 20px ;
+    border-radius: 9.5px;
+    height: 100%;
+
+    color: #000;
+    font-size: 16px;
+    font-family: "Monograf Regular";
+
+    transition: color 0.2s ease-in-out;
+}
+#location-input::placeholder{
+    color: #333;
+    opacity: 66%;
+    font-size: 12px;
+}
+#location-input:hover{    
+    background-color: #ddd;
+    opacity: 66%;
+    /* color: #fff; */
+    font-weight: 700;
+}
+#location-input:hover::placeholder{
+    /* color: #fff; */
+    font-weight: 700;
+}
+
+#button-search {
+    align-self: center;
+    margin: 0px 12px 0px 12px;
+    max-height: 20px;
+    
+    grid-area: 1/3;
+}
